@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minhas Receitas - Cofre Pessoal</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo">Meu Cofre Pessoal</h1>
+      <p>Site Acadêmico</p>
+    </header>
+    <hr>
+
+    <nav class="menu-lateral">
+      <h2>Menu</h2>
+
+      <ul>
+        <li>
+          <span class="titulo-grupo">GERAL</span>
+          <ul>
+            <li><a href="Inicio.html">Dashboard</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="titulo-grupo">MOVIMENTAÇÕES</span>
+          <ul>
+            <li><a href="receitas.html">Receitas</a></li>
+            <li><a href="despesas.html">Despesas</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="titulo-grupo">PLANEJAMENTO</span>
+          <ul>
+            <li><a href="orcamento.html">Orçamento</a></li>
+            <li><a href="metas.html">Metas Financeiras</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="titulo-grupo">ANÁLISE</span>
+          <ul>
+            <li><a href="relatorios.html">Relatórios</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="conteudo">
+      <div class="filtro-mes">
+        <select id="mes-filtro">
+          <option value="01">Janeiro</option>
+          <option value="02">Fevereiro</option>
+          <option value="03">Março</option>
+          <option value="04">Abril</option>
+          <option value="05">Maio</option>
+          <option value="06">Junho</option>
+          <option value="07">Julho</option>
+          <option value="08">Agosto</option>
+          <option value="09">Setembro</option>
+          <option value="10">Outubro</option>
+          <option value="11">Novembro</option>
+          <option value="12">Dezembro</option>
+        </select>
+
+        <select id="ano-filtro">
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+        </select>
+      </div>
+
+      <section id="nova-receita">
+        <h2>Nova receita</h2>
+
+        <form id="form-receita">
+          <p>
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" required />
+          </p>
+
+          <p>
+            <label for="valor">Valor (R$):</label>
+            <input type="number" id="valor" required step="0.01" min="0.01" />
+          </p>
+
+          <p>
+            <label for="data">Data:</label>
+            <input type="date" id="data" required />
+          </p>
+
+          <p>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+              <option value="salario">Salário</option>
+              <option value="freelance">Freelance</option>
+              <option value="mesada">Mesada</option>
+              <option value="investimento">Investimento</option>
+              <option value="venda">Vendas</option>
+              <option value="outros">Outros</option>
+            </select>
+          </p>
+
+          <button type="submit">Adicionar</button>
+        </form>
+      </section>
+
+      <section id="lista-receitas">
+        <h2>Minhas receitas</h2>
+        <p>Total do mês: <strong id="total-mes">R$ 0,00</strong></p>
+        <table>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Data</th>
+              <th>Categoria</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-receitas">
+            <tr></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
