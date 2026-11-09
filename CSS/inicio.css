@@ -124,7 +124,7 @@ th {
 }
 
 .carta:nth-child(1) {
-  border-top-color: var(--opção);
+  border-top-color: #2fa13e;
 }
 
 .carta:nth-child(2) {
@@ -132,7 +132,7 @@ th {
 }
 
 #total-receitas {
-  color: var(--opção);
+  color: #2fa13e;
 }
 
 #total-despesas {
