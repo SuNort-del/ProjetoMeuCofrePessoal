@@ -1,10 +1,10 @@
 /* ===== 1. BASE ===== */
 :root {
-  --marinho: #0f2a43;
-  --verde: #1f8a5b;
+  --marinho: #2b2d33;
+  --opção: #e67e22;
   --vermelho: #c0392b;
-  --fundo: #f2f5f7;
-  --borda: #dde3e8;
+  --fundo: #f4f4f5;
+  --borda: #e0e0e3;
 }
 
 * {
