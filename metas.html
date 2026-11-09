@@ -3,109 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <title>Minhas Metas - Cofre Pessoal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/metas.css" />
   </head>
-
 
   <body>
     <header>
       <h1 class="logo">Meu Cofre Pessoal</h1>
       <p>Site Acadêmico</p>
-
     </header>
-    <hr>
+    <hr />
 
+    <div class="layout">
+      <nav class="menu-lateral">
+        <h2>Menu</h2>
 
-    <nav class="menu-lateral">
-      <h2>Menu</h2>
+        <ul>
+          <li>
+            <span class="titulo-grupo">GERAL</span>
+            <ul>
+              <li><a href="Inicio.html">Dashboard</a></li>
+            </ul>
+          </li>
 
-      <ul>
-        <li>
-          <span class="titulo-grupo">GERAL</span>
-          <ul>
-            <li><a href="Inicio.html">Dashboard</a></li>
-          </ul>
-        </li>
+          <li>
+            <span class="titulo-grupo">MOVIMENTAÇÕES</span>
+            <ul>
+              <li><a href="receitas.html">Receitas</a></li>
+              <li><a href="despesas.html">Despesas</a></li>
+            </ul>
+          </li>
 
-        <li>
-          <span class="titulo-grupo">MOVIMENTAÇÕES</span>
-          <ul>
-            <li><a href="receitas.html">Receitas</a></li>
-            <li><a href="despesas.html">Despesas</a></li>
-          </ul>
-        </li>
+          <li>
+            <span class="titulo-grupo">PLANEJAMENTO</span>
+            <ul>
+              <li><a href="orcamento.html">Orçamento</a></li>
+              <li><a href="metas.html">Metas Financeiras</a></li>
+            </ul>
+          </li>
 
-        <li>
-          <span class="titulo-grupo">PLANEJAMENTO</span>
-          <ul>
-            <li><a href="orcamento.html">Orçamento</a></li>
-            <li><a href="metas.html">Metas Financeiras</a></li>
-          </ul>
-        </li>
+          <li>
+            <span class="titulo-grupo">ANÁLISE</span>
+            <ul>
+              <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-        <li>
-          <span class="titulo-grupo">ANÁLISE</span>
-          <ul>
-            <li><a href="relatorios.html">Relatórios</a></li>
-          </ul>
-        </li>
+      <main class="conteudo">
+        <section id="nova-meta">
+          <h2>Nova meta</h2>
 
-      </ul>
-    </nav>
+          <form id="form-meta">
+            <p>
+              <label for="nome-meta">Nome da meta:</label>
+              <input type="text" id="nome-meta" required maxlength="60" />
+            </p>
 
-    <main class="conteudo">
-      <section id="nova-meta">
-        <h2>Nova meta</h2>
+            <p>
+              <label for="valor-meta">Valor para juntar (R$):</label>
+              <input
+                type="number"
+                id="valor-meta"
+                required
+                step="0.01"
+                min="0.01"
+              />
+            </p>
 
-        <form id="form-meta">
-          <p>
-            <label for="nome-meta">Nome da meta:</label>
-            <input type="text" id="nome-meta" required maxlength="60" />
-          </p>
+            <p>
+              <label for="guardado">Valor guardado (R$):</label>
+              <input
+                type="number"
+                id="guardado"
+                step="0.01"
+                min="0"
+                value="0"
+              />
+            </p>
 
-          <p>
-            <label for="valor-meta">Valor para juntar (R$):</label>
-            <input
-              type="number"
-              id="valor-meta"
-              required
-              step="0.01"
-              min="0.01"
-            />
-          </p>
+            <p>
+              <label for="prazo">Prazo:</label>
+              <input type="date" id="prazo" required />
+            </p>
 
-          <p>
-            <label for="guardado">Valor guardado (R$):</label>
-            <input type="number" id="guardado" step="0.01" min="0" value="0" />
-          </p>
+            <button type="submit">Adicionar</button>
+          </form>
+        </section>
 
-          <p>
-            <label for="prazo">Prazo:</label>
-            <input type="date" id="prazo" required />
-          </p>
-
-          <button type="submit">Adicionar</button>
-        </form>
-      </section>
-
-      <section id="lista-metas">
-        <h2>Minhas metas</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Meta</th>
-              <th>Valor da meta</th>
-              <th>Guardado</th>
-              <th>Falta</th>
-              <th>Prazo</th>
-              <th>Progresso</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody id="tabela-metas">
-            
-          </tbody>
-        </table>
-      </section>
-    </main>
+        <section id="lista-metas">
+          <h2>Minhas metas</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Meta</th>
+                <th>Valor da meta</th>
+                <th>Guardado</th>
+                <th>Falta</th>
+                <th>Prazo</th>
+                <th>Progresso</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-metas">
+              <td>Notebook novo</td>
+              <td>R$ 3.000,00</td>
+              <td>R$ 1.200,00</td>
+              <td>R$ 1.800,00</td>
+              <td>31/12/2026</td>
+              <td><progress value="40" max="100"></progress> 40%</td>
+              <td><button>Excluir</button></td>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

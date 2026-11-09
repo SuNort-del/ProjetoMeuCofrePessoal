@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>Meus Relatorios - Cofre Pessoal</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/relatorios.css" />
   </head>
 
   <body>
@@ -11,70 +14,71 @@
       <p>Site Acadêmico</p>
     </header>
     <hr />
+    <div class="layout">
+      <nav class="menu-lateral">
+        <h2>Menu</h2>
 
-    <nav class="menu-lateral">
-      <h2>Menu</h2>
+        <ul>
+          <li>
+            <span class="titulo-grupo">GERAL</span>
+            <ul>
+              <li><a href="Inicio.html">Dashboard</a></li>
+            </ul>
+          </li>
 
-      <ul>
-        <li>
-          <span class="titulo-grupo">GERAL</span>
-          <ul>
-            <li><a href="Inicio.html">Dashboard</a></li>
-          </ul>
-        </li>
+          <li>
+            <span class="titulo-grupo">MOVIMENTAÇÕES</span>
+            <ul>
+              <li><a href="receitas.html">Receitas</a></li>
+              <li><a href="despesas.html">Despesas</a></li>
+            </ul>
+          </li>
 
-        <li>
-          <span class="titulo-grupo">MOVIMENTAÇÕES</span>
-          <ul>
-            <li><a href="receitas.html">Receitas</a></li>
-            <li><a href="despesas.html">Despesas</a></li>
-          </ul>
-        </li>
+          <li>
+            <span class="titulo-grupo">PLANEJAMENTO</span>
+            <ul>
+              <li><a href="orcamento.html">Orçamento</a></li>
+              <li><a href="metas.html">Metas Financeiras</a></li>
+            </ul>
+          </li>
 
-        <li>
-          <span class="titulo-grupo">PLANEJAMENTO</span>
-          <ul>
-            <li><a href="orcamento.html">Orçamento</a></li>
-            <li><a href="metas.html">Metas Financeiras</a></li>
-          </ul>
-        </li>
+          <li>
+            <span class="titulo-grupo">ANÁLISE</span>
+            <ul>
+              <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="conteudo">
+        <section id="lista-periodo">
+          <h2>Resumo do período</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Receitas</th>
+                <th>Despesas</th>
+                <th>Saldo</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-periodo"></tbody>
+          </table>
+        </section>
 
-        <li>
-          <span class="titulo-grupo">ANÁLISE</span>
-          <ul>
-            <li><a href="relatorios.html">Relatórios</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <main class="conteudo">
-      <section id="lista-periodo">
-        <h2>Resumo do período</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Receitas</th>
-              <th>Despesas</th>
-              <th>Saldo</th>
-            </tr>
-          </thead>
-          <tbody id="tabela-periodo"></tbody>
-        </table>
-      </section>
-
-      <section id="despesas-maiores">
-        <h2>Resumo do período</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Descrição</th>
-              <th>Categoria</th>
-              <th>Valor</th>
-            </tr>
-          </thead>
-          <tbody id="resultado-despesas"></tbody>
-        </table>
-      </section>
-    </main>
+        <section id="despesas-maiores">
+          <h2>Resumo do período</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th>Categoria</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody id="resultado-despesas"></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

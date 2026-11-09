@@ -3,97 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <title>Meu Cofre Pessoal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/inicio.css" />
   </head>
-
 
   <body>
     <header>
       <h1 class="logo">Meu Cofre Pessoal</h1>
       <p>Site Acadêmico</p>
-
     </header>
-    <hr>
+    <hr />
 
+    <div class="layout">
+      <nav class="menu-lateral">
+        <h2>Menu</h2>
 
-    <nav class="menu-lateral">
-      <h2>Menu</h2>
+        <ul>
+          <li>
+            <span class="titulo-grupo">GERAL</span>
+            <ul>
+              <li><a href="Inicio.html">Dashboard</a></li>
+            </ul>
+          </li>
 
-      <ul>
-        <li>
-          <span class="titulo-grupo">GERAL</span>
-          <ul>
-            <li><a href="Inicio.html">Dashboard</a></li>
-          </ul>
-        </li>
+          <li>
+            <span class="titulo-grupo">MOVIMENTAÇÕES</span>
+            <ul>
+              <li><a href="receitas.html">Receitas</a></li>
+              <li><a href="despesas.html">Despesas</a></li>
+            </ul>
+          </li>
 
-        <li>
-          <span class="titulo-grupo">MOVIMENTAÇÕES</span>
-          <ul>
-            <li><a href="receitas.html">Receitas</a></li>
-            <li><a href="despesas.html">Despesas</a></li>
-          </ul>
-        </li>
+          <li>
+            <span class="titulo-grupo">PLANEJAMENTO</span>
+            <ul>
+              <li><a href="orcamento.html">Orçamento</a></li>
+              <li><a href="metas.html">Metas Financeiras</a></li>
+            </ul>
+          </li>
 
-        <li>
-          <span class="titulo-grupo">PLANEJAMENTO</span>
-          <ul>
-            <li><a href="orcamento.html">Orçamento</a></li>
-            <li><a href="metas.html">Metas Financeiras</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <span class="titulo-grupo">ANÁLISE</span>
-          <ul>
-            <li><a href="relatorios.html">Relatórios</a></li>
-          </ul>
-        </li>
-
-      </ul>
-    </nav>
-    <main class="conteudo">
-            <h2>Resumo do mês</h2>
-
-      <section id="resumo" class="cards">
-        <div class="card">
-          <h3>Receitas</h3>
-          <strong id="total-receitas">R$ 0,00</strong>
-        </div>
-
-        <div class="card">
-          <h3>Despesas</h3>
-          <strong id="total-despesas">R$ 0,00</strong>
-        </div>
-
-        <div class="card">
-          <h3>Saldo</h3>
-          <strong id="saldo">R$ 0,00</strong>
-        </div>
-      </section>
-            <section id="despesas-categoria">
-        <h2>Despesas por categoria</h2>
-        <ul id="lista-categorias">
-          <li>Moradia: R$ 0,00</li>
-          <li>Alimentação: R$ 0,00</li>
-          <li>Transporte: R$ 0,00</li>
+          <li>
+            <span class="titulo-grupo">ANÁLISE</span>
+            <ul>
+              <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+          </li>
         </ul>
-      </section>
+      </nav>
+      <main class="conteudo">
+        <h2>Resumo do mês</h2>
 
-      <section id="ultimas-movimentacoes">
-        <h2>Últimas movimentações</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Descrição</th>
-              <th>Tipo</th>
-              <th>Valor</th>
-              <th>Data</th>
-            </tr>
-          </thead>
-          <tbody id="tabela-movimentacoes"></tbody>
-        </table>
-      </section>
-      
-    </main>
+        <section id="resumo" class="cartas">
+          <div class="carta">
+            <h3>Receitas</h3>
+            <strong id="total-receitas">R$ 0,00</strong>
+          </div>
+
+          <div class="carta">
+            <h3>Despesas</h3>
+            <strong id="total-despesas">R$ 0,00</strong>
+          </div>
+
+          <div class="carta">
+            <h3>Saldo</h3>
+            <strong id="saldo">R$ 0,00</strong>
+          </div>
+        </section>
+        <section id="despesas-categoria">
+          <h2>Despesas por categoria</h2>
+          <ul id="lista-categorias">
+            <li>Moradia: R$ 0,00</li>
+            <li>Alimentação: R$ 0,00</li>
+            <li>Transporte: R$ 0,00</li>
+          </ul>
+        </section>
+
+        <section id="ultimas-movimentacoes">
+          <h2>Últimas movimentações</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th>Tipo</th>
+                <th>Valor</th>
+                <th>Data</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-movimentacoes"></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

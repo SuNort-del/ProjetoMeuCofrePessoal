@@ -1,0 +1,140 @@
+/* ===== 1. BASE ===== */
+:root {
+  --marinho: #0f2a43;
+  --verde: #1f8a5b;
+  --vermelho: #c0392b;
+  --fundo: #f2f5f7;
+  --borda: #dde3e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--fundo);
+}
+
+hr {
+  display: none;
+}
+
+/* ===== 2. CABEÇALHO ===== */
+header {
+  background: var(--marinho);
+  color: white;
+  padding: 16px 24px;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+/* ===== 3. LAYOUT ===== */
+.layout {
+  display: flex;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 24px;
+}
+
+.conteudo section {
+  background: white;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* ===== 4. MENU LATERAL ===== */
+.menu-lateral {
+  width: 220px;
+  background: var(--marinho);
+  color: white;
+  padding: 16px;
+  min-height: 100vh;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.titulo-grupo {
+  display: block;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #8fa8bf;
+}
+
+.menu-lateral a {
+  display: block;
+  padding: 6px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-lateral a:hover {
+  background: var(--verde);
+}
+
+/* ===== 5. TABELAS ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid var(--borda);
+  text-align: left;
+}
+
+th {
+  background: var(--marinho);
+  color: white;
+}
+
+/* ===== 6. CARDS DO DASHBOARD ===== */
+.conteudo section.cartas {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.cartas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.carta {
+  background: white;
+  border: 1px solid var(--borda);
+  border-top: 4px solid var(--marinho);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.carta:nth-child(1) {
+  border-top-color: var(--verde);
+}
+
+.carta:nth-child(2) {
+  border-top-color: var(--vermelho);
+}
+
+#total-receitas {
+  color: var(--verde);
+}
+
+#total-despesas {
+  color: var(--vermelho);
+}
