@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Métodos - Cofre Pessoal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/metodos.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo">Meu Cofre Pessoal</h1>
+      <p>Seu dinheiro sob controle - Métodos</p>
+    </header>
+    <hr />
+
+    <div class="layout">
+      <nav class="menu-lateral">
+        <h2>Menu</h2>
+
+        <ul>
+          <li>
+            <span class="titulo-grupo">GERAL</span>
+            <ul>
+              <li><a href="Inicio.html">Inicio</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="titulo-grupo">MOVIMENTAÇÕES</span>
+            <ul>
+              <li><a href="receitas.html">Receitas</a></li>
+              <li><a href="despesas.html">Despesas</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="titulo-grupo">PLANEJAMENTO</span>
+            <ul>
+              <li><a href="orcamento.html">Orçamento</a></li>
+              <li><a href="metas.html">Metas Financeiras</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="titulo-grupo">ANÁLISE</span>
+            <ul>
+              <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="titulo-grupo">APRENDER</span>
+            <ul>
+              <li><a href="metodos.html">Métodos financeiros</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="conteudo">
+        <h2>Métodos de controle financeiro</h2>
+        <p class="intro">
+          Clique em uma imagem para ver como o método funciona, o que dizem as
+          fontes e como usar no Meu Cofre Pessoal.
+        </p>
+
+        <div class="metodos">
+          <input type="radio" name="metodo" id="m-orcamento" checked />
+          <input type="radio" name="metodo" id="m-reserva" />
+          <input type="radio" name="metodo" id="m-divida" />
+          <input type="radio" name="metodo" id="m-apps" />
+          <input type="radio" name="metodo" id="m-50-30-20" />
+          <input type="radio" name="metodo" id="m-base-zero" />
+          <input type="radio" name="metodo" id="m-envelopes" />
+          <input type="radio" name="metodo" id="m-pague-se" />
+          <input type="radio" name="metodo" id="m-kakebo" />
+          <input type="radio" name="metodo" id="m-potes" />
+          <input type="radio" name="metodo" id="m-24h" />
+          <input type="radio" name="metodo" id="m-52" />
+
+          <h3 class="grupo">Com base oficial ou estudo</h3>
+          <div class="cartoes">
+            <label for="m-orcamento" class="cartao">
+              <img
+                src="IMG_metodos/orcamento.svg"
+                alt="Ilustração de orçamento pessoal"
+              />
+              <span>Orçamento pessoal</span>
+            </label>
+
+            <label for="m-reserva" class="cartao">
+              <img
+                src="IMG_metodos/reserva-emergencia.svg"
+                alt="Ilustração de guarda-chuva protegendo moedas"
+              />
+              <span>Reserva de emergência</span>
+            </label>
+
+            <label for="m-divida" class="cartao">
+              <img
+                src="IMG_metodos/bola-de-neve-avalanche.svg"
+                alt="Ilustração de bola de neve crescendo e dívidas diminuindo"
+              />
+              <span>Bola de neve e avalanche</span>
+            </label>
+
+            <label for="m-apps" class="cartao">
+              <img
+                src="IMG_metodos/aplicativos-controle.svg"
+                alt="Ilustração de celular com aplicativo financeiro"
+              />
+              <span>Aplicativos de controle</span>
+            </label>
+          </div>
+
+          <h3 class="grupo">Métodos populares</h3>
+          <div class="cartoes">
+            <label for="m-50-30-20" class="cartao">
+              <img
+                src="IMG_metodos/regra-50-30-20.svg"
+                alt="Gráfico de pizza com 50%, 30% e 20%"
+              />
+              <span>Regra 50/30/20</span>
+            </label>
+
+            <label for="m-base-zero" class="cartao">
+              <img
+                src="IMG_metodos/base-zero.svg"
+                alt="Renda dividida em partes até sobrar zero"
+              />
+              <span>Orçamento base zero</span>
+            </label>
+
+            <label for="m-envelopes" class="cartao">
+              <img
+                src="IMG_metodos/envelopes.svg"
+                alt="Três envelopes, um para cada categoria"
+              />
+              <span>Método dos envelopes</span>
+            </label>
+
+            <label for="m-pague-se" class="cartao">
+              <img
+                src="IMG_metodos/pague-se-primeiro.svg"
+                alt="Primeiro guardar, depois gastar"
+              />
+              <span>Pague-se primeiro</span>
+            </label>
+
+            <label for="m-kakebo" class="cartao">
+              <img
+                src="IMG_metodos/kakebo.svg"
+                alt="Caderno de contas com caneta"
+              />
+              <span>Kakebo</span>
+            </label>
+
+            <label for="m-potes" class="cartao">
+              <img
+                src="IMG_metodos/potes.svg"
+                alt="Seis potes com partes da renda"
+              />
+              <span>Método dos potes</span>
+            </label>
+
+            <label for="m-24h" class="cartao">
+              <img
+                src="IMG_metodos/regra-24-horas.svg"
+                alt="Relógio e sacola de compras"
+              />
+              <span>Regra das 24 horas</span>
+            </label>
+
+            <label for="m-52" class="cartao">
+              <img
+                src="IMG_metodos/desafio-52-semanas.svg"
+                alt="Barras que crescem a cada semana"
+              />
+              <span>Desafio das 52 semanas</span>
+            </label>
+          </div>
+
+          <div class="textos">
+            <section class="texto" id="t-orcamento">
+              <h3>Orçamento pessoal</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É o registro de tudo que entra (receitas) e de tudo que sai
+                (despesas) em um período, normalmente um mês. Com ele você
+                descobre para onde o dinheiro vai e decide quanto pode gastar em
+                cada categoria.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>Liste todas as receitas do mês.</li>
+                <li>Liste todas as despesas, separadas por categoria.</li>
+                <li>
+                  Compare: o objetivo é que as receitas sejam maiores que as
+                  despesas.
+                </li>
+                <li>
+                  Defina um limite para cada categoria e acompanhe durante o
+                  mês.
+                </li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                O curso de Cidadania Financeira do Banco Central trata o
+                orçamento como uma ferramenta para entender os próprios hábitos
+                de consumo, aplicar os conceitos de receitas e despesas e
+                planejar as finanças pessoais e familiares, buscando um
+                orçamento superavitário.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Registre o que ganha em <a href="receitas.html">Receitas</a> e o
+                que gasta em <a href="despesas.html">Despesas</a>. Depois defina
+                seus limites em <a href="orcamento.html">Orçamento</a>.
+              </p>
+
+              <p class="fonte">
+                Fonte:
+                <a
+                  href="https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Cuidando_do_seu_dinheiro_Gestao_de_Financas_Pessoais/caderno_cidadania_financeira.pdf"
+                  >Caderno de Cidadania Financeira, Banco Central do Brasil</a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-reserva">
+              <h3>Reserva de emergência</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É um dinheiro guardado para imprevistos, como um problema de
+                saúde, um conserto urgente ou a perda de renda. Ele não serve
+                para compras do dia a dia, e sim para você não precisar se
+                endividar quando algo inesperado acontece.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>
+                  Defina uma meta de valor (por exemplo, alguns meses das suas
+                  despesas).
+                </li>
+                <li>
+                  Separe uma quantia assim que o dinheiro entra, antes de
+                  gastar.
+                </li>
+                <li>
+                  Guarde em um lugar de fácil resgate e que você não use no dia
+                  a dia.
+                </li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                No Brasil, a importância de manter uma reserva financeira também
+                é destacada por instituições como o Banco Central e a CAIXA. O
+                Banco Central explica que esse dinheiro ajuda a enfrentar
+                situações inesperadas sem precisar recorrer a empréstimos. Já a
+                CAIXA recomenda guardar o equivalente a 3 a 6 meses dos gastos
+                essenciais.
+
+                <br />Além disso, a 9ª edição do Raio X do Investidor
+                Brasileiro, realizada pela ANBIMA em parceria com o Datafolha,
+                revelou que 31% dos brasileiros não tinham nenhuma reserva
+                financeira ao final de 2025.
+              </p>
+
+              <p class="aviso">
+                Atenção: os dados apresentados são resultados de pesquisas com a
+                população brasileira e podem variar conforme o período e a
+                metodologia utilizada.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Crie uma meta chamada "Reserva de emergência" em
+                <a href="metas.html">Metas Financeiras</a> e acompanhe a barra
+                de progresso.
+              </p>
+
+              <p class="fonte">
+                Fontes:
+                <a
+                  href="https://www.bcb.gov.br/cidadaniafinanceira/lidando-imprevistos"
+                >
+                  Banco Central do Brasil - Lidando com imprevistos </a
+                >;
+                <a
+                  href="https://www.caixa.gov.br/educacao-financeira/voce/fundo-de-emergencia/Paginas/default.aspx"
+                >
+                  CAIXA - Como montar um fundo de emergência </a
+                >;
+                <a
+                  href="https://www.anbima.com.br/main.jsp?doui_processActionId=setLocaleProcessAction&locale=pt_BR&lumA=1&lumII=297E09808E1A7EB7018E1A8859476716&lumPageId=297E09808E1A7EB7018E1A884F6566B8"
+                >
+                  ANBIMA - Raio X do Investidor Brasileiro </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-divida">
+              <h3>Bola de neve e avalanche</h3>
+
+              <h4>O que é</h4>
+              <p>
+                São duas estratégias para quitar várias dívidas. Nas duas você
+                paga o mínimo de todas e coloca o dinheiro extra em uma só.
+              </p>
+              <ul>
+                <li>
+                  <strong>Bola de neve:</strong> começa pela dívida de menor
+                  valor. Ao quitá-la, o valor liberado vai para a próxima.
+                </li>
+                <li>
+                  <strong>Avalanche:</strong> começa pela dívida com maior juro,
+                  que é a mais cara.
+                </li>
+              </ul>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                Instituições brasileiras como a Serasa e o Nubank apresentam os
+                métodos bola de neve e avalanche como estratégias para organizar
+                o pagamento de dívidas. A bola de neve prioriza as dívidas de
+                menor valor, ajudando a manter a motivação por meio de pequenas
+                conquistas. Já a avalanche prioriza as dívidas com maiores taxas
+                de juros, podendo reduzir o valor total pago em juros ao longo
+                do tempo.
+              </p>
+
+              <p class="aviso">
+                Atenção: os resultados dependem dos valores, das taxas de juros
+                e das condições de cada dívida. É importante manter os
+                pagamentos em dia e negociar condições que caibam no orçamento.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Registre as parcelas e contas em
+                <a href="despesas.html">Despesas</a>, na categoria "Conta e
+                dívidas", e veja quanto pesam no mês.
+              </p>
+
+              <p class="fonte">
+                Fontes:
+                <a
+                  href="https://www.serasa.com.br/limpa-nome-online/blog/como-sair-da-divida/"
+                >
+                  Serasa - Como sair das dívidas com renda baixa </a
+                >;
+                <a
+                  href="https://blog.nubank.com.br/metodo-avalanche-e-bola-de-neve/"
+                >
+                  Nubank - Métodos Avalanche e Bola de Neve </a
+                >;
+                <a
+                  href="https://www.caixa.gov.br/educacao-financeira/voce/o-cerebro-e-as-dividas-por-que-elas-viram-bola-de-neve/Paginas/default.aspx"
+                >
+                  CAIXA - O cérebro e as dívidas </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-apps">
+              <h3>Aplicativos de controle financeiro</h3>
+
+              <h4>O que é</h4>
+              <p>
+                São aplicativos e sites em que você anota receitas e despesas e
+                acompanha tudo em tabelas e resumos. O Meu Cofre Pessoal é um
+                exemplo simples desse tipo de ferramenta.
+              </p>
+
+              <h4>Como usar</h4>
+              <ol>
+                <li>Anote cada gasto no mesmo dia, para não esquecer.</li>
+                <li>Confira o resumo do mês com frequência.</li>
+                <li>Use as categorias para ver onde está gastando mais.</li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+
+              <p>
+                Um estudo publicado na Revista Brasileira de Contabilidade, em
+                2024, analisou aplicativos gratuitos de finanças pessoais
+                disponíveis na Play Store. A pesquisa identificou que essas
+                ferramentas oferecem recursos que podem contribuir para o
+                controle dos gastos e o planejamento do orçamento pessoal.
+              </p>
+
+              <p>
+                Além disso, uma pesquisa realizada pelo Banco Central do Brasil
+                mostrou que 79,6% dos entrevistados responsáveis pelas decisões
+                financeiras utilizam mais de uma medida para controlar o
+                orçamento. O órgão também destaca a importância de registrar,
+                acompanhar e analisar os gastos e a renda.
+              </p>
+
+              <p class="aviso">
+                Atenção: os estudos mostram a utilidade dessas ferramentas para
+                a organização financeira, mas não garantem que o simples uso de
+                um aplicativo melhore a situação financeira de todas as pessoas.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Veja o resumo do mês no <a href="Inicio.html">Inicio</a> e
+                consulte meses anteriores em
+                <a href="relatorios.html">Relatórios</a>, além do resumo facil
+                para acompanhar, você tambem consegue usar as outras ferramentas
+                de forma simples e clara.
+              </p>
+
+              <p class="fonte">
+                Fontes:
+                <a
+                  href="https://cfc.org.br/wp-content/uploads/2024/03/RBC265_jan_fev.pdf"
+                >
+                  Revista Brasileira de Contabilidade - Finanças Pessoais: a
+                  contribuição dos aplicativos gratuitos mais baixados na Play
+                  Store para o controle e planejamento do orçamento financeiro
+                  pessoal (2024) </a
+                >;
+                <a
+                  href="https://www.bcb.gov.br/cidadaniafinanceira/letramento_financeiro"
+                >
+                  Banco Central do Brasil - Relatório de letramento financeiro </a
+                >.
+              </p>
+            </section>
+
+            <!-- ===== MÉTODOS POPULARES ===== -->
+            <section class="texto" id="t-50-30-20">
+              <h3>Regra 50/30/20</h3>
+
+              <h4>O que é</h4>
+              <p>
+                Divide a renda líquida (o que sobra depois dos descontos) em
+                três partes: 50% para necessidades (moradia, comida,
+                transporte), 30% para desejos (lazer, compras) e 20% para
+                poupança e pagamento de dívidas.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>Anote sua renda líquida do mês.</li>
+                <li>Calcule 50%, 30% e 20% desse valor.</li>
+                <li>Classifique cada despesa como necessidade ou desejo.</li>
+                <li>Compare com os limites e ajuste o que passar.</li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                A regra 50/30/20 foi popularizada por Elizabeth Warren e Amelia
+                Warren Tyagi no livro "All Your Worth" (2005). Atualmente,
+                instituições brasileiras como a Serasa e a CAIXA também
+                apresentam esse método como uma alternativa para organizar o
+                orçamento pessoal, dividindo a renda entre necessidades, desejos
+                e objetivos financeiros.
+              </p>
+
+              <p>
+                A Serasa destaca que os percentuais podem ser adaptados conforme
+                a realidade financeira de cada pessoa, especialmente quando as
+                despesas essenciais ultrapassam 50% da renda.
+              </p>
+
+              <p class="aviso">
+                Atenção: a divisão 50/30/20 é uma referência de organização, não
+                uma regra obrigatória. Os percentuais precisam ser adaptados à
+                renda e às despesas de cada pessoa.
+              </p>
+
+              <p class="fonte">
+                Fontes: Warren e Tyagi, "All Your Worth" (2005);
+                <a
+                  href="https://www.serasa.com.br/score/blog/metodo-50-30-20-como-utilizar/"
+                >
+                  Serasa - Método 50-30-20: aprenda a dividir o salário </a
+                >;
+                <a
+                  href="https://www.caixa.gov.br/educacao-financeira/voce/como-fazer-os-200-renderem-mais/Paginas/default.aspx"
+                >
+                  CAIXA - Como fazer os R$ 200 renderem mais </a
+                >;
+                <a href="https://blog.nubank.com.br/regra-50-30-20/">
+                  Nubank - Regra 50-30-20 </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-base-zero">
+              <h3>Orçamento base zero</h3>
+
+              <h4>O que é</h4>
+              <p>
+                Cada real da renda recebe uma função (gastos, dívidas, poupança)
+                até o que sobra para planejar chegar a zero. Isso não significa
+                gastar tudo, e sim que todo o dinheiro tem um destino.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>Anote a renda do mês.</li>
+                <li>
+                  Distribua o valor entre contas fixas, gastos variáveis,
+                  dívidas e poupança.
+                </li>
+                <li>Confira se renda menos tudo o que planejou dá zero.</li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                O orçamento base zero é utilizado em metodologias internacionais
+                de organização financeira, como a proposta pelo aplicativo YNAB,
+                que orienta a atribuir uma função a cada valor recebido. No
+                Brasil, a CAIXA também apresenta essa técnica como uma forma de
+                revisar os gastos mensalmente, justificando cada despesa de
+                acordo com as necessidades do período.
+              </p>
+
+              <p class="aviso">
+                Atenção: a existência de materiais que recomendam o método não
+                significa que ele seja comprovadamente superior a outras formas
+                de organização financeira.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Cadastre sua renda em <a href="receitas.html">Receitas</a> e
+                distribua os limites em <a href="orcamento.html">Orçamento</a>.
+              </p>
+              <p class="fonte">
+                Fontes:
+                <a href="https://www.ynab.com/"> YNAB - You Need A Budget </a>;
+                <a
+                  href="https://static.caixaconsorcio.com.br/EducacaoFinanceira/Cartilha_Educacao_Financeira.pdf"
+                >
+                  CAIXA - Cartilha de Educação Financeira </a
+                >;
+                <a
+                  href="https://www.organizze.com.br/blog/gestao-financeira/orcamento-base-zero"
+                >
+                  Organizze - Orçamento Base Zero </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-envelopes">
+              <h3>Método dos envelopes</h3>
+
+              <h4>O que é</h4>
+              <p>
+                Consiste em separar o dinheiro disponível em diferentes
+                categorias, como alimentação, transporte e lazer. Cada categoria
+                recebe um limite de gastos, que pode ser representado por
+                envelopes físicos ou por divisões em contas e aplicativos.
+                Quando o valor acaba, é necessário controlar os gastos até o
+                próximo período.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>
+                  Escolha as categorias em que deseja organizar seu dinheiro.
+                </li>
+                <li>Defina quanto pode gastar em cada categoria no mês.</li>
+                <li>Separe os valores em envelopes ou controles digitais.</li>
+                <li>
+                  Acompanhe os gastos e evite ultrapassar os limites definidos.
+                </li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                Um estudo de Amar Cheema e Dilip Soman, publicado no Journal of
+                Marketing Research em 2011, analisou o comportamento de
+                trabalhadores de baixa renda na Índia. Os pesquisadores
+                observaram que separar o dinheiro destinado à poupança em dois
+                envelopes resultou em uma economia média maior do que concentrar
+                o mesmo valor em apenas um envelope.
+              </p>
+              <p>
+                A pesquisa demonstra como separar o dinheiro por finalidade pode
+                influenciar o comportamento de poupança, embora não tenha
+                testado exatamente o método tradicional de controle de despesas
+                por categorias.
+              </p>
+
+              <p class="aviso">
+                Atenção: o estudo foi realizado com trabalhadores indianos e
+                seus resultados não garantem o mesmo efeito para todas as
+                pessoas.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Defina limites para cada categoria em
+                <a href="orcamento.html">Orçamento</a> e acompanhe o valor
+                utilizado para saber quanto ainda está disponível.
+              </p>
+
+              <p class="fonte">
+                Fontes:
+                <a
+                  href="https://www.russellsage.org/sites/all/files/u137/jmr-C-s014-s021-online.pdf"
+                >
+                  Cheema e Soman (2011) - Earmarking and Partitioning:
+                  Increasing Saving by Low-Income Households </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-pague-se">
+              <h3>Pague-se primeiro</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É uma estratégia de organização financeira em que você separa
+                uma parte da renda para poupar assim que recebe o dinheiro. Em
+                vez de guardar apenas o que sobra no final do mês, a poupança
+                passa a ser uma prioridade no planejamento financeiro.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>
+                  Defina um valor ou percentual da renda que deseja guardar.
+                </li>
+                <li>Separe esse dinheiro assim que receber.</li>
+                <li>Se possível, programe uma transferência automática.</li>
+                <li>
+                  Organize suas despesas considerando apenas o dinheiro
+                  restante.
+                </li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                A ideia de priorizar a poupança aparece em obras clássicas de
+                educação financeira, como "O Homem Mais Rico da Babilônia", de
+                George S. Clason (1926). Pesquisas internacionais também
+                encontraram resultados positivos em mecanismos de poupança
+                automática.
+              </p>
+              <p>
+                Um estudo publicado em 2024 pelo National Bureau of Economic
+                Research analisou quatro experimentos realizados no Reino Unido.
+                Em um deles, a adesão automática a um programa de poupança
+                aumentou a participação dos trabalhadores em comparação com a
+                inscrição voluntária.
+              </p>
+
+              <p class="aviso">
+                Atenção: os experimentos analisaram programas de poupança
+                vinculados ao salário, não o método pessoal de separar dinheiro
+                assim que recebe. Os resultados são relacionados, mas não
+                representam um teste direto da estratégia.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Crie uma meta em <a href="metas.html">Metas Financeiras</a>
+                e atualize o valor guardado assim que receber sua renda.
+              </p>
+
+              <p class="fonte">
+                Fontes: Clason, George S. - "O Homem Mais Rico da Babilônia"
+                (1926);
+                <a href="https://www.nber.org/papers/w32581">
+                  NBER (2024) - Automating Short-Term Payroll Savings: Evidence
+                  from Four Large U.K. Experiments </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-kakebo">
+              <h3>Kakebo</h3>
+
+              <h4>O que é</h4>
+              <p>
+                Criado no Japão em 1904 pela jornalista Hani Motoko, o Kakebo é
+                um método de planejamento financeiro que utiliza um caderno para
+                ajudar a pessoa a desenvolver consciência sobre suas escolhas de
+                consumo. Sua proposta vai além de controlar valores: busca
+                entender para onde o dinheiro está indo e quais hábitos podem
+                ser modificados.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>
+                  Registre sua renda mensal e estabeleça quanto pretende
+                  economizar.
+                </li>
+                <li>
+                  Divida os gastos em quatro grupos: sobrevivência, lazer,
+                  cultura e extras.
+                </li>
+                <li>
+                  Durante o mês, registre as compras e classifique cada despesa.
+                </li>
+                <li>
+                  Ao final do período, compare o planejamento com os gastos
+                  realizados.
+                </li>
+                <li>
+                  Identifique quais escolhas poderiam ser diferentes no próximo
+                  mês.
+                </li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                O Kakebo surgiu como uma ferramenta doméstica de planejamento
+                financeiro no Japão e se tornou conhecido por incentivar uma
+                relação mais consciente com o dinheiro. Seu diferencial está na
+                reflexão sobre os hábitos de consumo, permitindo que a pessoa
+                identifique gastos desnecessários e estabeleça prioridades.
+              </p>
+
+              <p class="aviso">
+                Atenção: o Kakebo possui importância histórica e é utilizado
+                como ferramenta de organização pessoal, mas não há comprovação
+                científica suficiente de que seja superior a outros métodos de
+                controle financeiro.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Utilize <a href="despesas.html">Despesas</a> para classificar
+                seus gastos e consulte <a href="relatorios.html">Relatórios</a>
+                no final do mês. Assim, você consegue analisar seus hábitos de
+                consumo sem precisar utilizar um caderno físico.
+              </p>
+
+              <p class="fonte">
+                Fonte:
+                <a
+                  href="https://www1.folha.uol.com.br/mercado/2024/09/kakebo-o-antigo-metodo-japones-para-controlar-gastos-e-poupar-dinheiro.shtml"
+                >
+                  Folha de S.Paulo (2024) - Kakebo: o antigo método japonês para
+                  controlar gastos e poupar dinheiro </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-potes">
+              <h3>Método dos potes</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É uma estratégia de organização financeira associada ao autor T.
+                Harv Eker. Ela divide a renda em seis partes, cada uma destinada
+                a uma finalidade específica: necessidades, poupança de longo
+                prazo, lazer, educação, liberdade financeira e doações.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>Separe sua renda líquida mensal.</li>
+                <li>Divida o dinheiro entre os seis potes.</li>
+                <li>Utilize cada parte somente para sua finalidade.</li>
+                <li>
+                  Acompanhe os valores e ajuste os percentuais conforme sua
+                  realidade.
+                </li>
+              </ol>
+
+              <p>A divisão sugerida por T. Harv Eker é:</p>
+              <ul>
+                <li>55% para necessidades básicas.</li>
+                <li>10% para poupança de longo prazo.</li>
+                <li>10% para lazer e diversão.</li>
+                <li>10% para educação e desenvolvimento pessoal.</li>
+                <li>10% para liberdade financeira e investimentos.</li>
+                <li>5% para doações.</li>
+              </ul>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                T. Harv Eker apresenta o sistema dos seis potes como uma maneira
+                de dividir a renda e atribuir uma finalidade a cada parte do
+                dinheiro. A proposta procura equilibrar necessidades, objetivos
+                futuros, desenvolvimento pessoal e lazer.
+              </p>
+              <p>
+                O método é uma proposta de organização financeira divulgada pelo
+                próprio autor, e não uma divisão de percentuais comprovadamente
+                ideal para todas as pessoas.
+              </p>
+
+              <p class="aviso">
+                Atenção: os percentuais são sugestões. Pessoas com renda menor
+                ou despesas essenciais elevadas podem precisar adaptar bastante
+                essa divisão.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Transforme cada pote em uma categoria ou objetivo dentro de
+                <a href="orcamento.html">Orçamento</a> e acompanhe os valores
+                destinados a cada finalidade.
+              </p>
+
+              <p class="fonte">
+                Fonte:
+                <a href="https://www.harvekeronline.com/ffc/6-jars-exercise/">
+                  T. Harv Eker - The 6 Jars Money Management System </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-24h">
+              <h3>Regra das 24 horas</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É uma estratégia para evitar compras por impulso. Antes de
+                realizar uma compra não planejada, você espera pelo menos 24
+                horas para pensar melhor sobre a decisão. Em compras de maior
+                valor, pode aumentar esse prazo para alguns dias ou até 30 dias.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>Anote o produto que deseja comprar e seu preço.</li>
+                <li>Espere pelo menos 24 horas antes de decidir.</li>
+                <li>Reavalie se realmente precisa daquele produto.</li>
+                <li>Confira se a compra cabe no seu orçamento.</li>
+                <li>Se ainda fizer sentido, decida se vale a pena comprar.</li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                A CAIXA, em seu material de educação financeira, recomenda
+                estratégias de pausa e reflexão antes de realizar compras por
+                impulso. Entre as orientações apresentadas está esperar antes de
+                comprar e avaliar se o produto é realmente necessário.
+              </p>
+              <p>
+                Pesquisas acadêmicas sobre comportamento de consumo também
+                investigam o adiamento das decisões de compra como uma
+                ferramenta para ajudar consumidores a refletir antes de
+                finalizar uma compra.
+              </p>
+
+              <p class="aviso">
+                Atenção: essas referências apoiam a ideia de pausar e refletir
+                antes de comprar, mas não comprovam que exatamente 24 horas seja
+                o prazo ideal para todas as situações.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Antes de registrar uma compra não planejada em
+                <a href="despesas.html">Despesas</a>, espere o prazo definido e
+                confira se ainda existe espaço no orçamento em
+                <a href="orcamento.html">Orçamento</a>.
+              </p>
+
+              <p class="fonte">
+                Fontes:
+                <a
+                  href="https://www.caixa.gov.br/educacao-financeira/voce/comprei-e-me-arrependi-como-evitar-o-impulso-que-doi-no-bolso/Paginas/default.aspx"
+                >
+                  CAIXA - Como evitar compras por impulso </a
+                >;
+                <a
+                  href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/155212/moserc_1.pdf?sequence=1"
+                >
+                  University of Michigan - Impulse Buying: Designing for
+                  Self-Control </a
+                >.
+              </p>
+            </section>
+
+            <section class="texto" id="t-52">
+              <h3>Desafio das 52 semanas</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É um desafio de poupança realizado ao longo de um ano. A cada
+                semana, você guarda um valor correspondente ao número da semana.
+                Começa com R$ 1 na primeira semana, R$ 2 na segunda e aumenta R$
+                1 a cada semana até chegar a R$ 52 na última.
+              </p>
+              <p>
+                Ao completar as 52 semanas, o total acumulado será de R$ 1.378.
+              </p>
+
+              <h4>Como fazer</h4>
+              <ol>
+                <li>Escolha um local para guardar o dinheiro.</li>
+                <li>Na primeira semana, guarde R$ 1.</li>
+                <li>Aumente R$ 1 no valor guardado a cada nova semana.</li>
+                <li>Acompanhe os depósitos para não perder o controle.</li>
+                <li>Ao final da 52ª semana, confira o total acumulado.</li>
+              </ol>
+
+              <h4>O que dizem as fontes</h4>
+              <p>
+                O desafio das 52 semanas é uma prática popular de incentivo à
+                poupança, baseada em metas progressivas e depósitos frequentes.
+                Ele pode ajudar a estabelecer uma rotina de guardar dinheiro e
+                acompanhar a evolução de uma meta.
+              </p>
+              <p>
+                Entretanto, não foi identificada uma pesquisa científica
+                específica que comprove a eficácia do desafio das 52 semanas. O
+                Banco Central do Brasil destaca, de forma geral, a importância
+                de planejar o orçamento e desenvolver o hábito de poupar.
+              </p>
+
+              <p class="aviso">
+                Atenção: o valor aumenta progressivamente e chega a R$ 52 por
+                semana. Se isso ficar pesado no orçamento, adapte os valores ou
+                comece pelo maior e diminua gradualmente.
+              </p>
+
+              <h4>Como usar no Meu Cofre Pessoal</h4>
+              <p>
+                Crie uma meta de R$ 1.378 em
+                <a href="metas.html">Metas Financeiras</a> e atualize o valor
+                guardado a cada semana.
+              </p>
+
+              <p class="fonte">
+                Fontes:
+                <a
+                  href="https://www.bcb.gov.br/meubc/faqs/s/educacao-financeira-sub"
+                >
+                  Banco Central do Brasil - Educação Financeira </a
+                >.
+              </p>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

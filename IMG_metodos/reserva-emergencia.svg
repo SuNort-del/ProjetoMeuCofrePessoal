@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Reserva de emergência: guarda-chuva protegendo moedas">
+  <rect width="400" height="300" rx="16" fill="#f4f4f5"/>
+  <g stroke="#e0e0e3" stroke-width="3" stroke-linecap="round">
+    <line x1="60" y1="40" x2="50" y2="62"/>
+    <line x1="110" y1="30" x2="100" y2="52"/>
+    <line x1="290" y1="30" x2="280" y2="52"/>
+    <line x1="340" y1="45" x2="330" y2="67"/>
+    <line x1="70" y1="100" x2="60" y2="122"/>
+    <line x1="335" y1="110" x2="325" y2="132"/>
+  </g>
+  <path d="M90 140 A110 90 0 0 1 310 140 Z" fill="#2b2d33"/>
+  <path d="M90 140 Q122 118 145 140 Q172 118 200 140 Q228 118 255 140 Q278 118 310 140 Z" fill="#e67e22"/>
+  <line x1="200" y1="55" x2="200" y2="215" stroke="#2b2d33" stroke-width="6" stroke-linecap="round"/>
+  <path d="M200 215 q0 18 -18 18 q-14 0 -14 -12" fill="none" stroke="#2b2d33" stroke-width="6" stroke-linecap="round"/>
+  <g>
+    <ellipse cx="270" cy="262" rx="36" ry="9" fill="#d4a62a"/>
+    <rect x="234" y="248" width="72" height="14" fill="#d4a62a"/>
+    <ellipse cx="270" cy="248" rx="36" ry="9" fill="#e8c14d"/>
+    <ellipse cx="270" cy="234" rx="36" ry="9" fill="#d4a62a"/>
+    <rect x="234" y="220" width="72" height="14" fill="#d4a62a"/>
+    <ellipse cx="270" cy="220" rx="36" ry="9" fill="#e8c14d"/>
+  </g>
+  <g>
+    <ellipse cx="130" cy="262" rx="30" ry="8" fill="#d4a62a"/>
+    <rect x="100" y="250" width="60" height="12" fill="#d4a62a"/>
+    <ellipse cx="130" cy="250" rx="30" ry="8" fill="#e8c14d"/>
+  </g>
+</svg>

@@ -80,7 +80,7 @@ header p {
 }
 
 .menu-lateral a:hover {
-  background: var(--verde);
+  background: var(--opção);
 }
 
 /* ===== 5. FORMULÁRIO ===== */
@@ -117,7 +117,7 @@ th {
 
 /* ===== 7. BOTÕES ===== */
 button {
-  background: var(--verde);
+  background: var(--opção);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -132,5 +132,5 @@ td button {
 /* ===== 8. BARRA DE PROGRESSO ===== */
 progress {
   width: 120px;
-  accent-color: var(--verde);
+  accent-color: var(--opção);
 }

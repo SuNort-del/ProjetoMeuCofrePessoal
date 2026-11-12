@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Bola de neve e avalanche: bola crescendo ladeira abaixo e dívidas diminuindo">
+  <rect width="400" height="300" rx="16" fill="#f4f4f5"/>
+  <path d="M20 90 L380 230 L380 280 L20 280 Z" fill="#ffffff" stroke="#e0e0e3" stroke-width="2"/>
+  <path d="M20 90 L380 230" stroke="#2b2d33" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="70" cy="69" r="12" fill="#e0e0e3" stroke="#2b2d33" stroke-width="3"/>
+  <circle cx="140" cy="87" r="19" fill="#e0e0e3" stroke="#2b2d33" stroke-width="3"/>
+  <circle cx="230" cy="106" r="30" fill="#e0e0e3" stroke="#2b2d33" stroke-width="3"/>
+  <circle cx="335" cy="143" r="42" fill="#e0e0e3" stroke="#2b2d33" stroke-width="3"/>
+  <path d="M320 135 q10 -12 24 -6" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <g>
+    <rect x="40" y="215" width="110" height="14" rx="5" fill="#c0392b"/>
+    <rect x="40" y="238" width="70" height="14" rx="5" fill="#c0392b" opacity=".75"/>
+    <rect x="40" y="261" width="30" height="14" rx="5" fill="#c0392b" opacity=".5"/>
+  </g>
+  <path d="M165 244 h50" stroke="#e67e22" stroke-width="4" stroke-linecap="round"/>
+  <path d="M205 234 l12 10 l-12 10" fill="none" stroke="#e67e22" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="260" cy="245" r="16" fill="#e67e22"/>
+  <path d="M252 245 l6 6 l11 -12" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

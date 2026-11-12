@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Regra das 24 horas: relógio e sacola de compras para esperar antes de comprar">
+  <rect width="400" height="300" rx="16" fill="#f4f4f5"/>
+  <circle cx="140" cy="150" r="90" fill="#fff" stroke="#2b2d33" stroke-width="8"/>
+  <g stroke="#2b2d33" stroke-width="5" stroke-linecap="round">
+    <line x1="140" y1="72" x2="140" y2="84"/>
+    <line x1="140" y1="216" x2="140" y2="228"/>
+    <line x1="62" y1="150" x2="74" y2="150"/>
+    <line x1="206" y1="150" x2="218" y2="150"/>
+  </g>
+  <line x1="140" y1="150" x2="140" y2="100" stroke="#2b2d33" stroke-width="7" stroke-linecap="round"/>
+  <line x1="140" y1="150" x2="180" y2="170" stroke="#e67e22" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="140" cy="150" r="8" fill="#2b2d33"/>
+  <text x="140" y="262" font-family="Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#e67e22">24h</text>
+  <g transform="translate(250 100)">
+    <path d="M25 30 v-14 a22 22 0 0 1 44 0 v14" fill="none" stroke="#2b2d33" stroke-width="6" stroke-linecap="round"/>
+    <rect x="0" y="30" width="94" height="110" rx="10" fill="#e67e22"/>
+    <path d="M30 70 l12 12 l24 -26" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+    <text x="47" y="98" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle" fill="#fff">?</text>
+  </g>
+</svg>

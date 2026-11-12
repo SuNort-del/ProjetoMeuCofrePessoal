@@ -1,0 +1,219 @@
+/* ===== 1. BASE ===== */
+:root {
+  --marinho: #2b2d33;
+  --destaque: #e67e22;
+  --vermelho: #c0392b;
+  --receita: #2fa13e;
+  --fundo: #f4f4f5;
+  --borda: #e0e0e3;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--fundo);
+}
+ 
+hr {
+  display: none;
+}
+ 
+/* ===== 2. CABEÇALHO ===== */
+header {
+  background: var(--marinho);
+  color: white;
+  padding: 16px 24px;
+}
+ 
+header h1,
+header p {
+  margin: 0;
+}
+ 
+/* ===== 3. LAYOUT ===== */
+.layout {
+  display: flex;
+}
+ 
+.conteudo {
+  flex: 1;
+  min-width: 0;
+  padding: 24px;
+}
+ 
+/* ===== 4. MENU LATERAL ===== */
+.menu-lateral {
+  width: 220px;
+  background: var(--marinho);
+  color: white;
+  padding: 16px;
+  min-height: 100vh;
+}
+ 
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+ 
+.titulo-grupo {
+  display: block;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #a9abb3;
+}
+ 
+.menu-lateral a {
+  display: block;
+  padding: 6px 10px;
+  color: white;
+  text-decoration: none;
+}
+ 
+.menu-lateral a:hover {
+  background: var(--destaque);
+}
+ 
+/* ===== 5. PÁGINA DE MÉTODOS ===== */
+.conteudo h2 {
+  color: var(--marinho);
+}
+ 
+.intro {
+  color: #555;
+}
+ 
+.grupo {
+  margin: 24px 0 12px;
+  color: var(--marinho);
+  border-bottom: 3px solid var(--destaque);
+  padding-bottom: 4px;
+}
+ 
+.metodos input {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+ 
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+ 
+.cartao {
+  background: white;
+  border: 2px solid var(--borda);
+  border-radius: 10px;
+  padding: 18px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+}
+ 
+.cartao:hover {
+  border-color: var(--destaque);
+  transform: translateY(-3px);
+}
+ 
+.cartao img {
+  width: 100%;
+  max-width: 140px;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px;
+}
+ 
+.cartao span {
+  font-weight: bold;
+  color: var(--marinho);
+}
+ 
+.textos {
+  margin-top: 24px;
+}
+ 
+.texto {
+  display: none;
+  background: white;
+  border: 1px solid var(--borda);
+  border-top: 4px solid var(--destaque);
+  border-radius: 8px;
+  padding: 20px;
+}
+ 
+.texto h3 {
+  margin-top: 0;
+  color: var(--marinho);
+}
+ 
+.texto h4 {
+  margin-bottom: 4px;
+  color: var(--destaque);
+}
+ 
+.texto p,
+.texto li {
+  line-height: 1.5;
+}
+ 
+.texto a {
+  color: var(--marinho);
+  font-weight: bold;
+}
+ 
+.aviso {
+  background: #fdf3e7;
+  border-left: 4px solid var(--destaque);
+  padding: 8px 12px;
+}
+ 
+.fonte {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--borda);
+  font-size: 14px;
+  color: #555;
+}
+ 
+#m-orcamento:checked ~ .textos #t-orcamento,
+#m-reserva:checked ~ .textos #t-reserva,
+#m-divida:checked ~ .textos #t-divida,
+#m-apps:checked ~ .textos #t-apps,
+#m-50-30-20:checked ~ .textos #t-50-30-20,
+#m-base-zero:checked ~ .textos #t-base-zero,
+#m-envelopes:checked ~ .textos #t-envelopes,
+#m-pague-se:checked ~ .textos #t-pague-se,
+#m-kakebo:checked ~ .textos #t-kakebo,
+#m-potes:checked ~ .textos #t-potes,
+#m-24h:checked ~ .textos #t-24h,
+#m-52:checked ~ .textos #t-52 {
+  display: block;
+}
+ 
+#m-orcamento:checked ~ .cartoes label[for="m-orcamento"],
+#m-reserva:checked ~ .cartoes label[for="m-reserva"],
+#m-divida:checked ~ .cartoes label[for="m-divida"],
+#m-apps:checked ~ .cartoes label[for="m-apps"],
+#m-50-30-20:checked ~ .cartoes label[for="m-50-30-20"],
+#m-base-zero:checked ~ .cartoes label[for="m-base-zero"],
+#m-envelopes:checked ~ .cartoes label[for="m-envelopes"],
+#m-pague-se:checked ~ .cartoes label[for="m-pague-se"],
+#m-kakebo:checked ~ .cartoes label[for="m-kakebo"],
+#m-potes:checked ~ .cartoes label[for="m-potes"],
+#m-24h:checked ~ .cartoes label[for="m-24h"],
+#m-52:checked ~ .cartoes label[for="m-52"] {
+  border-color: var(--destaque);
+  background: #fdf0e3;
+}
+ 

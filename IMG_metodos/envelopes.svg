@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Método dos envelopes: três envelopes, um para cada categoria de gasto">
+  <rect width="400" height="300" rx="16" fill="#f4f4f5"/>
+  <g>
+    <rect x="30" y="90" width="100" height="130" rx="8" fill="#fff" stroke="#2b2d33" stroke-width="3"/>
+    <path d="M30 98 L80 150 L130 98" fill="#e0e0e3" stroke="#2b2d33" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="48" y="175" width="64" height="12" rx="3" fill="#2b2d33"/>
+    <rect x="48" y="195" width="40" height="8" rx="3" fill="#e0e0e3"/>
+  </g>
+  <g>
+    <rect x="150" y="90" width="100" height="130" rx="8" fill="#fff" stroke="#e67e22" stroke-width="3"/>
+    <path d="M150 98 L200 150 L250 98" fill="#fdf0e3" stroke="#e67e22" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="168" y="175" width="64" height="12" rx="3" fill="#e67e22"/>
+    <rect x="168" y="195" width="40" height="8" rx="3" fill="#e0e0e3"/>
+  </g>
+  <g>
+    <rect x="270" y="90" width="100" height="130" rx="8" fill="#fff" stroke="#2fa13e" stroke-width="3"/>
+    <path d="M270 98 L320 150 L370 98" fill="#e8f5e9" stroke="#2fa13e" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="288" y="175" width="64" height="12" rx="3" fill="#2fa13e"/>
+    <rect x="288" y="195" width="40" height="8" rx="3" fill="#e0e0e3"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#2b2d33">
+    <text x="80" y="250">Mercado</text>
+    <text x="200" y="250">Lazer</text>
+    <text x="320" y="250">Transporte</text>
+  </g>
+  <circle cx="200" cy="50" r="22" fill="#e67e22"/>
+  <text x="200" y="58" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#fff">R$</text>
+</svg>
