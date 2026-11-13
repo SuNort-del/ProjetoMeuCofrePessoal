@@ -140,8 +140,8 @@ td button {
 }
 /* ===== 9. EXEMPLOS ===== */
 
-.tabela-despesas #exemplos th,
-.tabela-despesas #exemplos th:nth-child(2) {
+.tabela-despesas #exemplos td,
+.tabela-despesas #exemplos td:nth-child(2) {
   color: #888;
   background: #fafafa;
 }

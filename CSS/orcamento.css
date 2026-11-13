@@ -134,3 +134,11 @@ progress {
   width: 120px;
   accent-color: var(--opção);
 }
+
+/* ===== 9. EXEMPLOS ===== */
+
+#lista-orcamento #tabela-orcamento td,
+#lista-orcamento #tabela-orcamento td:nth-child(2) {
+  color: #888;
+  background: #fafafa;
+}

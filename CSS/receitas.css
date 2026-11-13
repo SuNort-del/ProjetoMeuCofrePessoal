@@ -142,8 +142,8 @@ td button {
 
 /* ===== 9. EXEMPLOS ===== */
 
-.tabela-receitas #exemplos th,
-.tabela-receitas #exemplos th:nth-child(2) {
+.tabela-receitas #exemplos td,
+.tabela-receitas #exemplos td:nth-child(2) {
   color: #888;
   background: #fafafa;
 }

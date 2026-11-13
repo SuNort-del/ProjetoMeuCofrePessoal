@@ -58,6 +58,7 @@ header p {
   color: white;
   padding: 16px;
   min-height: 100vh;
+  
 }
 
 .menu-lateral ul {
@@ -133,4 +134,13 @@ td button {
 progress {
   width: 120px;
   accent-color: var(--opção);
+}
+
+
+/* ===== 9. EXEMPLOS ===== */
+
+#lista-metas #exemplos td,
+#lista-metas #exemplos td:nth-child(2) {
+  color: #888;
+  background: #fafafa;
 }

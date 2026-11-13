@@ -138,3 +138,11 @@ th {
 #total-despesas {
   color: var(--vermelho);
 }
+
+/* ===== 7. EXEMPLOS ===== */
+
+#ultimas-movimentacoes #tabela-movimentacoes td,
+#ultimas-movimentacoes #tabela-movimentacoes td:nth-child(2) {
+  color: #888;
+  background: #fafafa;
+}

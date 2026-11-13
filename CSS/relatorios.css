@@ -114,3 +114,11 @@ th {
   background: var(--marinho);
   color: white;
 }
+
+/* ===== 7. EXEMPLOS ===== */
+
+.conteudo #exemplos td,
+.conteudo #exemplos td:nth-child(2) {
+  color: #888;
+  background: #fafafa;
+}
