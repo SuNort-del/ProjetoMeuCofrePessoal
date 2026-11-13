@@ -3,8 +3,8 @@
   --marinho: #2b2d33;
   --opção: #e67e22;
   --vermelho: #c0392b;
-  --fundo: #f4f4f5;
-  --borda: #e0e0e3;
+  --fundo: #eee9dc;
+  --borda: #bdb5a5;
 }
 
 * {
@@ -26,6 +26,7 @@ header {
   background: var(--marinho);
   color: white;
   padding: 16px 24px;
+  border-bottom: 4px solid var(--opção);
 }
 
 header h1,
@@ -44,11 +45,12 @@ header p {
 }
 
 .conteudo section {
-  background: white;
-  border: 1px solid var(--borda);
-  border-radius: 8px;
+  background: #faf7ed;
+  border: 1px dashed var(--borda);
+  border-radius: 0;
   padding: 16px;
   margin-bottom: 16px;
+  box-shadow: 2px 3px 0 #d2cabb;
 }
 
 /* ===== 4. MENU LATERAL ===== */
@@ -69,7 +71,7 @@ header p {
   display: block;
   margin-top: 14px;
   font-size: 12px;
-  color: #8fa8bf;
+  color: #d4a36c;
 }
 
 .menu-lateral a {
@@ -77,10 +79,12 @@ header p {
   padding: 6px 10px;
   color: white;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .menu-lateral a:hover {
   background: var(--opção);
+  padding-left: 14px;
 }
 
 /* ===== 5. FORMULÁRIO ===== */
@@ -93,20 +97,21 @@ input,
 select {
   padding: 6px;
   border: 1px solid var(--borda);
-  border-radius: 4px;
+  border-radius: 0;
+  background: #faf7ed;
 }
 
 /* ===== 6. TABELA ===== */
 table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  background: #faf7ed;
 }
 
 th,
 td {
   padding: 8px;
-  border-bottom: 1px solid var(--borda);
+  border-bottom: 1px dashed var(--borda);
   text-align: left;
 }
 
@@ -121,8 +126,13 @@ button {
   color: white;
   border: none;
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 0;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--marinho);
 }
 
 td button {
@@ -136,9 +146,8 @@ progress {
 }
 
 /* ===== 9. EXEMPLOS ===== */
-
 #lista-orcamento #tabela-orcamento td,
 #lista-orcamento #tabela-orcamento td:nth-child(2) {
   color: #888;
-  background: #fafafa;
+  background: #f5ead5;
 }

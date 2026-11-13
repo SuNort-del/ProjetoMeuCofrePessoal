@@ -2,8 +2,8 @@
   --marinho: #2b2d33;
   --opção: #e67e22;
   --vermelho: #c0392b;
-  --fundo: #f4f4f5;
-  --borda: #e0e0e3;
+  --fundo: #eee9dc;
+  --borda: #bdb5a5;
 }
 
 * {
@@ -22,16 +22,18 @@ body {
 }
 
 .login {
-  background: white;
-  border: 1px solid var(--borda);
+  background: #faf7ed;
+  border: 2px dashed var(--borda);
   padding: 25px;
-  border-radius: 5px;
+  border-radius: 0;
+  box-shadow: 4px 5px 0 #d2cabb;
 }
 
 h1 {
   color: var(--marinho);
   text-align: center;
   font-size: 23px;
+  font-family: Georgia, serif;
 }
 
 .subtitulo {
@@ -44,6 +46,7 @@ h1 {
 h2 {
   color: var(--marinho);
   font-size: 20px;
+  font-family: Georgia, serif;
 }
 
 .descricao {
@@ -62,8 +65,9 @@ form input {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--borda);
-  border-radius: 4px;
+  border-radius: 0;
   margin-bottom: 15px;
+  background: white;
 }
 
 button {
@@ -72,8 +76,9 @@ button {
   background: var(--marinho);
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -96,6 +101,11 @@ button:hover {
   color: #999;
   font-size: 11px;
   margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
 }
 
 .esqueceu-senha {
@@ -126,4 +136,28 @@ button:hover {
 .opcoes input[type="checkbox"] {
   width: auto;
   margin: 0;
+}
+
+/* ===== IMAGEM DO LOGIN ===== */
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  overflow: hidden;
+}
+
+.login {
+  flex: 1;
+}
+
+.imagem-login {
+  flex: 1;
+  min-height: 550px;
+}
+
+.imagem-login img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }

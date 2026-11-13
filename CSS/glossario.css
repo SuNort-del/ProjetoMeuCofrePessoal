@@ -2,8 +2,8 @@
 :root {
   --marinho: #2b2d33;
   --destaque: #e67e22;
-  --fundo: #f4f4f5;
-  --borda: #e0e0e3;
+  --fundo: #eee9dc;
+  --borda: #bdb5a5;
 }
 
 * {
@@ -25,6 +25,7 @@ header {
   background: var(--marinho);
   color: white;
   padding: 16px 24px;
+  border-bottom: 4px solid var(--destaque);
 }
 
 header h1,
@@ -61,7 +62,7 @@ header p {
   display: block;
   margin-top: 14px;
   font-size: 12px;
-  color: #a9abb3;
+  color: #d4a36c;
 }
 
 .menu-lateral a {
@@ -69,10 +70,12 @@ header p {
   padding: 6px 10px;
   color: white;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .menu-lateral a:hover {
   background: var(--destaque);
+  padding-left: 14px;
 }
 
 /* ===== 5. PÁGINA DO GLOSSÁRIO ===== */
@@ -97,17 +100,16 @@ header p {
 }
 
 .cartao {
-  background: white;
-  border: 2px solid var(--borda);
-  border-radius: 8px;
+  background: #faf7ed;
+  border: 2px dashed var(--borda);
+  border-radius: 0;
   padding: 16px 8px;
   text-align: center;
   font-weight: bold;
   color: var(--marinho);
   cursor: pointer;
-  transition:
-    border-color 0.2s,
-    transform 0.2s;
+  transition: 0.3s;
+  box-shadow: 2px 3px 0 #d2cabb;
 }
 
 .cartao:hover {
@@ -121,10 +123,10 @@ header p {
 
 .definicao {
   display: none;
-  background: white;
-  border: 1px solid var(--borda);
+  background: #faf7ed;
+  border: 1px dashed var(--borda);
   border-top: 4px solid var(--destaque);
-  border-radius: 8px;
+  border-radius: 0;
   padding: 20px;
 }
 
@@ -167,5 +169,5 @@ header p {
 #g-superavit:checked ~ .cartoes label[for="g-superavit"],
 #g-reserva:checked ~ .cartoes label[for="g-reserva"] {
   border-color: var(--destaque);
-  background: #fdf0e3;
+  background: #f5ead5;
 }
