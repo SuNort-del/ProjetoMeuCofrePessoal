@@ -7,44 +7,44 @@
   --fundo: #f4f4f5;
   --borda: #e0e0e3;
 }
- 
+
 * {
   box-sizing: border-box;
 }
- 
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: var(--fundo);
 }
- 
+
 hr {
   display: none;
 }
- 
+
 /* ===== 2. CABEÇALHO ===== */
 header {
   background: var(--marinho);
   color: white;
   padding: 16px 24px;
 }
- 
+
 header h1,
 header p {
   margin: 0;
 }
- 
+
 /* ===== 3. LAYOUT ===== */
 .layout {
   display: flex;
 }
- 
+
 .conteudo {
   flex: 1;
   min-width: 0;
   padding: 24px;
 }
- 
+
 /* ===== 4. MENU LATERAL ===== */
 .menu-lateral {
   width: 220px;
@@ -53,58 +53,58 @@ header p {
   padding: 16px;
   min-height: 100vh;
 }
- 
+
 .menu-lateral ul {
   list-style: none;
   padding: 0;
 }
- 
+
 .titulo-grupo {
   display: block;
   margin-top: 14px;
   font-size: 12px;
   color: #a9abb3;
 }
- 
+
 .menu-lateral a {
   display: block;
   padding: 6px 10px;
   color: white;
   text-decoration: none;
 }
- 
+
 .menu-lateral a:hover {
   background: var(--destaque);
 }
- 
+
 /* ===== 5. PÁGINA DE MÉTODOS ===== */
 .conteudo h2 {
   color: var(--marinho);
 }
- 
+
 .intro {
   color: #555;
 }
- 
+
 .grupo {
   margin: 24px 0 12px;
   color: var(--marinho);
   border-bottom: 3px solid var(--destaque);
   padding-bottom: 4px;
 }
- 
+
 .metodos input {
   position: fixed;
   opacity: 0;
   pointer-events: none;
 }
- 
+
 .cartoes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
- 
+
 .cartao {
   background: white;
   border: 2px solid var(--borda);
@@ -112,19 +112,21 @@ header p {
   padding: 18px 12px;
   text-align: center;
   cursor: pointer;
-  transition: border-color 0.2s, transform 0.2s;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 180px;
 }
- 
+
 .cartao:hover {
   border-color: var(--destaque);
   transform: translateY(-3px);
 }
- 
+
 .cartao img {
   width: 100%;
   max-width: 140px;
@@ -133,16 +135,16 @@ header p {
   display: block;
   margin: 0 auto 12px;
 }
- 
+
 .cartao span {
   font-weight: bold;
   color: var(--marinho);
 }
- 
+
 .textos {
   margin-top: 24px;
 }
- 
+
 .texto {
   display: none;
   background: white;
@@ -151,33 +153,33 @@ header p {
   border-radius: 8px;
   padding: 20px;
 }
- 
+
 .texto h3 {
   margin-top: 0;
   color: var(--marinho);
 }
- 
+
 .texto h4 {
   margin-bottom: 4px;
   color: var(--destaque);
 }
- 
+
 .texto p,
 .texto li {
   line-height: 1.5;
 }
- 
+
 .texto a {
   color: var(--marinho);
   font-weight: bold;
 }
- 
+
 .aviso {
   background: #fdf3e7;
   border-left: 4px solid var(--destaque);
   padding: 8px 12px;
 }
- 
+
 .fonte {
   margin-top: 16px;
   padding-top: 12px;
@@ -185,7 +187,7 @@ header p {
   font-size: 14px;
   color: #555;
 }
- 
+
 #m-orcamento:checked ~ .textos #t-orcamento,
 #m-reserva:checked ~ .textos #t-reserva,
 #m-divida:checked ~ .textos #t-divida,
@@ -200,7 +202,7 @@ header p {
 #m-52:checked ~ .textos #t-52 {
   display: block;
 }
- 
+
 #m-orcamento:checked ~ .cartoes label[for="m-orcamento"],
 #m-reserva:checked ~ .cartoes label[for="m-reserva"],
 #m-divida:checked ~ .cartoes label[for="m-divida"],
@@ -216,4 +218,3 @@ header p {
   border-color: var(--destaque);
   background: #fdf0e3;
 }
- 

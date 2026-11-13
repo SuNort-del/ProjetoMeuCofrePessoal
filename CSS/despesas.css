@@ -138,3 +138,10 @@ button {
 td button {
   background: var(--vermelho);
 }
+/* ===== 9. EXEMPLOS ===== */
+
+.tabela-despesas #exemplos th,
+.tabela-despesas #exemplos th:nth-child(2) {
+  color: #888;
+  background: #fafafa;
+}

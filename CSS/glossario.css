@@ -1,0 +1,171 @@
+/* ===== 1. BASE ===== */
+:root {
+  --marinho: #2b2d33;
+  --destaque: #e67e22;
+  --fundo: #f4f4f5;
+  --borda: #e0e0e3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--fundo);
+}
+
+hr {
+  display: none;
+}
+
+/* ===== 2. CABEÇALHO ===== */
+header {
+  background: var(--marinho);
+  color: white;
+  padding: 16px 24px;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+/* ===== 3. LAYOUT ===== */
+.layout {
+  display: flex;
+}
+
+.conteudo {
+  flex: 1;
+  min-width: 0;
+  padding: 24px;
+}
+
+/* ===== 4. MENU LATERAL ===== */
+.menu-lateral {
+  width: 220px;
+  background: var(--marinho);
+  color: white;
+  padding: 16px;
+  min-height: 100vh;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.titulo-grupo {
+  display: block;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #a9abb3;
+}
+
+.menu-lateral a {
+  display: block;
+  padding: 6px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-lateral a:hover {
+  background: var(--destaque);
+}
+
+/* ===== 5. PÁGINA DO GLOSSÁRIO ===== */
+.conteudo h2 {
+  color: var(--marinho);
+}
+
+.intro {
+  color: #555;
+}
+
+.termos input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.cartao {
+  background: white;
+  border: 2px solid var(--borda);
+  border-radius: 8px;
+  padding: 16px 8px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--marinho);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.cartao:hover {
+  border-color: var(--destaque);
+  transform: translateY(-3px);
+}
+
+.definicoes {
+  margin-top: 20px;
+}
+
+.definicao {
+  display: none;
+  background: white;
+  border: 1px solid var(--borda);
+  border-top: 4px solid var(--destaque);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.definicao h3 {
+  margin-top: 0;
+  color: var(--marinho);
+}
+
+.definicao h4 {
+  margin-bottom: 4px;
+  color: var(--destaque);
+}
+
+.definicao p {
+  line-height: 1.5;
+}
+
+.definicao a {
+  color: var(--marinho);
+  font-weight: bold;
+}
+
+#g-receita:checked ~ .definicoes #d-receita,
+#g-despesa:checked ~ .definicoes #d-despesa,
+#g-saldo:checked ~ .definicoes #d-saldo,
+#g-juros:checked ~ .definicoes #d-juros,
+#g-inflacao:checked ~ .definicoes #d-inflacao,
+#g-parcelamento:checked ~ .definicoes #d-parcelamento,
+#g-superavit:checked ~ .definicoes #d-superavit,
+#g-reserva:checked ~ .definicoes #d-reserva {
+  display: block;
+}
+
+#g-receita:checked ~ .cartoes label[for="g-receita"],
+#g-despesa:checked ~ .cartoes label[for="g-despesa"],
+#g-saldo:checked ~ .cartoes label[for="g-saldo"],
+#g-juros:checked ~ .cartoes label[for="g-juros"],
+#g-inflacao:checked ~ .cartoes label[for="g-inflacao"],
+#g-parcelamento:checked ~ .cartoes label[for="g-parcelamento"],
+#g-superavit:checked ~ .cartoes label[for="g-superavit"],
+#g-reserva:checked ~ .cartoes label[for="g-reserva"] {
+  border-color: var(--destaque);
+  background: #fdf0e3;
+}

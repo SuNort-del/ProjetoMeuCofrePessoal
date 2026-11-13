@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Glossário - Cofre Pessoal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/glossario.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo">Meu Cofre Pessoal</h1>
+      <p>Seu dinheiro sob controle - Glossário</p>
+    </header>
+    <hr />
+
+    <div class="layout">
+      <nav class="menu-lateral">
+        <h2>Menu</h2>
+
+        <ul>
+          <li>
+            <span class="titulo-grupo">GERAL</span>
+            <ul>
+              <li><a href="Inicio.html">Inicio</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="titulo-grupo">MOVIMENTAÇÕES</span>
+            <ul>
+              <li><a href="receitas.html">Receitas</a></li>
+              <li><a href="despesas.html">Despesas</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="titulo-grupo">PLANEJAMENTO</span>
+            <ul>
+              <li><a href="orcamento.html">Orçamento</a></li>
+              <li><a href="metas.html">Metas Financeiras</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="titulo-grupo">ANÁLISE</span>
+            <ul>
+              <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="titulo-grupo">APRENDER</span>
+            <ul>
+              <li><a href="metodos.html">Métodos financeiros</a></li>
+              <li><a href="glossario.html">Glossário</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="conteudo">
+        <h2>Glossário financeiro</h2>
+        <p class="intro">
+          Algumas palavras que aparecem muito quando se fala de dinheiro. Clique
+          em uma delas para ver o que significa.
+        </p>
+
+        <div class="termos">
+          <!-- Botões escondidos: o CSS usa o que está marcado para mostrar a definição certa -->
+          <input type="radio" name="termo" id="g-receita" checked />
+          <input type="radio" name="termo" id="g-despesa" />
+          <input type="radio" name="termo" id="g-saldo" />
+          <input type="radio" name="termo" id="g-juros" />
+          <input type="radio" name="termo" id="g-inflacao" />
+          <input type="radio" name="termo" id="g-parcelamento" />
+          <input type="radio" name="termo" id="g-superavit" />
+          <input type="radio" name="termo" id="g-reserva" />
+
+          <!-- Os cartões clicáveis -->
+          <div class="cartoes">
+            <label for="g-receita" class="cartao">Receita</label>
+            <label for="g-despesa" class="cartao">Despesa</label>
+            <label for="g-saldo" class="cartao">Saldo</label>
+            <label for="g-juros" class="cartao">Juros</label>
+            <label for="g-inflacao" class="cartao">Inflação</label>
+            <label for="g-parcelamento" class="cartao">Parcelamento</label>
+            <label for="g-superavit" class="cartao">Superávit e déficit</label>
+            <label for="g-reserva" class="cartao">Reserva de emergência</label>
+          </div>
+
+          <!-- As definições: só uma aparece por vez -->
+          <div class="definicoes">
+            <section class="definicao" id="d-receita">
+              <h3>Receita</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É todo dinheiro que entra para você, como salário, mesada,
+                freelance ou o rendimento de um investimento.
+              </p>
+
+              <h4>Exemplo</h4>
+              <p>
+                Se você recebeu R$ 1.500 de salário e R$ 200 de um freela, sua
+                receita do mês foi R$ 1.700.
+              </p>
+
+              <h4>No site</h4>
+              <p>Você registra em <a href="receitas.html">Receitas</a>.</p>
+            </section>
+
+            <section class="definicao" id="d-despesa">
+              <h3>Despesa</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É todo dinheiro que sai, seja uma conta fixa (como aluguel e
+                internet) ou um gasto do dia a dia (como mercado e transporte).
+              </p>
+
+              <h4>Exemplo</h4>
+              <p>
+                Aluguel de R$ 600, mercado de R$ 300 e ônibus de R$ 100 somam R$
+                1.000 de despesas.
+              </p>
+
+              <h4>No site</h4>
+              <p>
+                Você registra em <a href="despesas.html">Despesas</a>, separando
+                por categoria.
+              </p>
+            </section>
+
+            <section class="definicao" id="d-saldo">
+              <h3>Saldo</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É o que sobra depois de pagar tudo: receitas menos despesas. Se
+                for positivo, sobrou dinheiro. Se for negativo, você gastou mais
+                do que ganhou.
+              </p>
+
+              <h4>Exemplo</h4>
+              <p>
+                Receitas de R$ 1.700 menos despesas de R$ 1.000 dá um saldo de
+                R$ 700.
+              </p>
+
+              <h4>No site</h4>
+              <p>
+                Aparece no card "Saldo" do <a href="Inicio.html">Inicio</a>.
+              </p>
+            </section>
+
+            <section class="definicao" id="d-juros">
+              <h3>Juros</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É o "preço" de usar o dinheiro ao longo do tempo. Quando você
+                deve, paga juros. Quando você investe, recebe juros.
+              </p>
+
+              <h4>Exemplo</h4>
+              <p>
+                Se uma compra de R$ 100 parcelada com juros sai por R$ 120 no
+                total, os juros foram R$ 20.
+              </p>
+
+              <h4>No site</h4>
+              <p>
+                O site ainda não calcula juros. Eles pesam principalmente nas
+                dívidas, que você registra em
+                <a href="despesas.html">Despesas</a>.
+              </p>
+            </section>
+
+            <section class="definicao" id="d-inflacao">
+              <h3>Inflação</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É o aumento geral dos preços ao longo do tempo. Com a inflação,
+                o mesmo dinheiro compra menos coisas do que comprava antes. No
+                Brasil, ela é medida por um índice chamado IPCA, calculado pelo
+                IBGE.
+              </p>
+
+              <h4>Exemplo</h4>
+              <p>
+                Se o preço do mercado sobe, os mesmos R$ 300 compram menos itens
+                no mês seguinte.
+              </p>
+
+              <h4>No site</h4>
+              <p>
+                Por isso vale revisar os limites de
+                <a href="orcamento.html">Orçamento</a> de tempos em tempos.
+              </p>
+            </section>
+
+            <section class="definicao" id="d-parcelamento">
+              <h3>Parcelamento</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É dividir o valor de uma compra em várias parcelas, pagas mês a
+                mês. Cada parcela pesa pouco, mas várias parcelas juntas podem
+                comprometer boa parte da renda.
+              </p>
+
+              <h4>Exemplo</h4>
+              <p>
+                Um celular de R$ 1.200 em 12 vezes dá parcelas de R$ 100, e isso
+                vai pesar nos próximos 12 meses.
+              </p>
+
+              <h4>No site</h4>
+              <p>
+                Registre o valor de cada parcela em
+                <a href="despesas.html">Despesas</a>, no mês em que ela vence.
+              </p>
+            </section>
+
+            <section class="definicao" id="d-superavit">
+              <h3>Superávit e déficit</h3>
+
+              <h4>O que é</h4>
+              <p>
+                Superávit é quando as receitas são maiores que as despesas, ou
+                seja, sobra dinheiro. Déficit é o contrário: as despesas são
+                maiores e falta dinheiro. Um orçamento saudável busca o
+                superávit.
+              </p>
+
+              <h4>Exemplo</h4>
+              <p>
+                Ganhou R$ 1.700 e gastou R$ 1.000: superávit de R$ 700. Ganhou
+                R$ 1.000 e gastou R$ 1.200: déficit de R$ 200.
+              </p>
+
+              <h4>No site</h4>
+              <p>
+                É o mesmo que o saldo positivo ou negativo, que aparece no
+                <a href="Inicio.html">Inicio</a>.
+              </p>
+            </section>
+
+            <section class="definicao" id="d-reserva">
+              <h3>Reserva de emergência</h3>
+
+              <h4>O que é</h4>
+              <p>
+                É um dinheiro guardado só para imprevistos, como um problema de
+                saúde ou um conserto urgente. Ele evita que você precise se
+                endividar quando algo inesperado acontece.
+              </p>
+
+              <h4>Exemplo</h4>
+              <p>
+                Guardar um pouco todo mês até ter alguns meses dos seus gastos
+                separados.
+              </p>
+
+              <h4>No site</h4>
+              <p>
+                Crie uma meta em <a href="metas.html">Metas Financeiras</a>.
+                Veja mais na página
+                <a href="metodos.html">Métodos financeiros</a>.
+              </p>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+    <script src="JS/glossario.js"></script>
+</html>
